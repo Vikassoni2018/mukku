@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mukku ❤️ Vikku</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe6e6, #ffccff);
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 2rem;
+      text-align: center;
+      color: #e60073;
+      animation: float 2s infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .container {
+      width: 100%;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .card-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .card-slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      height: 70vh;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      margin: 0 10px;
+      position: relative;
+      color: white;
+      font-weight: bold;
+      padding: 20px;
+      display: flex;
+      align-items: flex-end;
+      font-size: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      border-radius: 20px;
+    }
+
+    .card span {
+      position: relative;
+      z-index: 1;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .btns {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      background-color: #e91e63;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>❤️ Mukku & Vikku Love ❤️</h1>
+
+  <div class="container">
+    <div class="card-slider" id="cardSlider">
+
+      <div class="card" style="background-image: url('images/1st.jpeg');">
+        <span>1. तू सामने हो और वक्त थम जाए,<br>बस यही ख्वाहिश है मेरी Mukku ❤️</span>
+      </div>
+      <div class="card" style="background-image: url('images/2nd.jpeg');">
+        <span>2. चांद तारों से भी प्यारी है तेरी बात,<br>हर पल तुझसे करना चाहता हूँ मुलाकात।</span>
+      </div>
+      <div class="card" style="background-image: url('images/3rd.jpeg');">
+        <span>3. तेरी हँसी मेरा सुकून है,<br>तेरा साथ मेरी जान Mukku 💕</span>
+      </div>
+      <div class="card" style="background-image: url('images/4th.jpeg');">
+        <span>4. मोहब्बत तुझसे बेपनाह की है,<br>हर साँस में बस तेरा ही नाम लिया है।</span>
+      </div>
+      <div class="card" style="background-image: url('images/5th.jpeg');">
+        <span>5. तेरे बिना अधूरी है हर सुबह,<br>तेरे साथ ही है मेरी हर खुशी Mukku 🌸</span>
+      </div>
+      <div class="card" style="background-image: url('images/6th.jpeg');">
+        <span>6. तुझमें ही बसी है मेरी दुनिया,<br>तेरी आँखों में खो जाने का मन करता है।</span>
+      </div>
+      <div class="card" style="background-image: url('images/7th.jpeg');">
+        <span>7. तेरा साथ मिले बस यही काफी है,<br>मुझे और कुछ नहीं चाहिए इस ज़िन्दगी से।</span>
+      </div>
+      <div class="card" style="background-image: url('images/8th.jpeg');">
+        <span>8. तुझे सोचते ही मुस्कुरा जाता हूँ,<br>तू जो है तो सब कुछ है।</span>
+      </div>
+      <div class="card" style="background-image: url('images/9th.jpeg');">
+        <span>9. प्यार की परिभाषा है तू,<br>मेरी रूह की प्यास है तू।</span>
+      </div>
+      <div class="card" style="background-image: url('images/10th.jpeg');">
+        <span>10. तेरी बातें जादू जैसी,<br>हर लम्हा बस तुझमें जीने की आदत है।</span>
+      </div>
+
+      <div class="card" style="background-image: url('images/11th.jpeg');">
+        <span>11. मेरी आँखों का सपना तू,<br>मेरी साँसों की खुशबू Mukku 💖</span>
+      </div>
+      <div class="card" style="background-image: url('images/12th.jpeg');">
+        <span>12. तुझे देखकर दिल बहल जाता है,<br>हर दर्द मेरा हल जाता है।</span>
+      </div>
+      <div class="card" style="background-image: url('images/13th.jpeg');">
+        <span>13. तेरी मुस्कान है सुकून मेरा,<br>तू ही मेरा जुनून है Mukku ❤️</span>
+      </div>
+      <div class="card" style="background-image: url('images/14th.jpeg');">
+        <span>14. तेरी हर बात पर मर मिटता हूँ,<br>तू ही है जो हर पल में बसता है।</span>
+      </div>
+      <div class="card" style="background-image: url('images/15th.jpeg');">
+        <span>15. मेरी ज़िन्दगी की सबसे प्यारी कहानी,<br>तेरे साथ की है Mukku!</span>
+      </div>
+      <div class="card" style="background-image: url('images/16th.jpeg');">
+        <span>16. तू जो है तो सब कुछ है,<br>वरना अधूरी है ये दुनिया।</span>
+      </div>
+      <div class="card" style="background-image: url('images/18th.jpeg');">
+        <span>18. तेरे साथ चलना है उम्र भर,<br>हर मोड़ पर, हर सफर में Mukku ❤️</span>
+      </div>
+      <div class="card" style="background-image: url('images/19th.jpeg');">
+        <span>19. तू मेरी हर शायरी का अल्फाज़ है,<br>हर ख्वाब की शुरुआत है।</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="btns">
+    <button onclick="slideLeft()">⬅️ Prev</button>
+    <button onclick="slideRight()">Next ➡️</button>
+  </div>
+
+  <script>
+    const slider = document.getElementById("cardSlider");
+
+    function slideLeft() {
+      slider.scrollBy({ left: -window.innerWidth, behavior: 'smooth' });
+    }
+
+    function slideRight() {
+      slider.scrollBy({ left: window.innerWidth, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
